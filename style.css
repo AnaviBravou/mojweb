@@ -282,7 +282,11 @@ body {
 	border-width: 3px;
 }
 .vjestina.tamno-siva {
-	background-color: #1D0F0F;
+	background-color: #fff;
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
 }
 @media screen and (max-width:767px) {
 	.vjestina:nth-child(odd) {
@@ -363,14 +367,18 @@ body {
 	border-width: 3px;
 }
 .social-profile.tamno-siva {
-	background-color: #1D0F0F;
+	background-color: #fff;
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
 }
 @media screen and (max-width:767px) {
 	.social-profile:nth-child(odd) {
 		background-color: #fff;
 	}
 	.social-profile:nth-child(even) {
-		background-color: #1D0F0F;
+		background-color: #fff;
 	}
 }
 .social-profile p {
