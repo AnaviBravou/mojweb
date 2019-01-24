@@ -1,0 +1,458 @@
+body {
+	background: #fff;
+}
+/* ------ Zaglavlje / početak ------ */
+.zaglavlje {
+	height: 500px;
+	background: url('slike/DSCN1265rob.jpg') no-repeat;
+	background-size: cover;
+}
+.zaglavlje a {
+	color: #fff;
+	font-size: 40pt;
+	text-decoration: bold;
+	text-align: left;
+	display: block;
+	margin-top: 100px;
+	margin-left: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.zaglavlje p {
+	color: #fff;
+	font-size: 32pt;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	font-family: 'Lobster', cursive;
+}
+@media screen and (max-width: 720px) {
+	.zaglavlje {
+		height: 250px;
+	}
+	.zaglavlje p {
+		display: none;
+	}
+	.zaglavlje a {
+		color: #fff;
+		font-size: 19pt;
+		text-decoration: bold;
+		text-align: right;
+		display: block;
+		margin-top: 30px;
+		margin-right: 30px;
+		font-family: 'Dancing Script', cursive;
+		position: absolute;
+		margin: 0;
+	}
+	.slider {
+		display: none;
+	}
+}
+/* ------ Zaglavlje / kraj ------ */
+
+/* ------ Navigacija / početak ------ */
+.navigacija {
+	height: 70px;
+	background-color: #1D0F0F;
+}
+.navigacija li {
+	display: inline;
+	margin-right: 40px;
+	list-style-type: none;
+}
+.navigacija li a {
+	line-height: 70px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18pt;
+	font-family: 'Roboto Slab', serif;
+}
+.navigacija .hamburger {
+	text-align: right;
+	font-size: 24pt;
+	line-height: 70px;
+	padding-right: 40px;
+	display: none;
+}
+.navigacija .main-menu {
+	margin-bottom: 0;
+}
+@media screen and (max-width:760px) {
+	.navigacija .hamburger {
+		display: block;
+		color: #fff;
+	}
+	.navigacija .main-menu li {
+		border-top: 1px solid black;
+		display: block;
+		background-color: #1D0F0F;
+	}
+	.navigacija {
+		height: auto;
+	}
+	.main-menu {
+		display: none;
+	}
+}
+@media screen and (min-width:761px) {
+	.main-menu {
+		display: block !important;
+	}
+}
+/* ------ Navigacija / kraj ------ */
+
+/* ------ Carousel / početak ----- */
+.slider .col {
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 40px;
+}
+.slider h2 {
+	font-size: 18pt;
+	text-transform: uppercase;
+}
+.slider p {
+	font-size: 14pt;
+}
+.slider .carousel-caption {
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+/* ------ Carousel / kraj ----- */
+
+/* ------ Galerija / početak ------ */
+.galerija h1 {
+	font-size: 40pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+}
+.galerija .slika .maska {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}
+.galerija .slika:hover .maska {
+	opacity: 0.7;
+}
+.galerija .slika .maska p {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.galerija .slika {
+	padding: 0;
+}
+.galerija .maska a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.galerija .maska .naziv-rada {
+	font-size: 18pt;
+	text-transform: uppercase;
+}
+.galerija .maska .kategorija {
+	font-size: 14pt;
+}
+/* ------ Galerija / kraj ------ */
+
+/* ------ Kontakt / početak ------ */
+.kontakt {
+	background-color: #fff;
+	padding: 50px 30px;
+	margin-top: 60px;
+}
+.kontakt h1 {
+	color: #1D0F0F;
+	font-size: 40pt;
+	text-align: center;
+	font-family: 'Dancing Script', regular;
+	padding-bottom: 30px;
+}
+.kontakt input[type=text],
+.kontakt input[type=email],
+.kontakt textarea {
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 0;
+}
+.kontakt input {
+	height: 50px;
+}
+.kontakt button[type=submit] {
+	background-color: #1D0F0F;
+	border: 0;
+	border-radius: 0;
+	width: 200px;
+	height: 50px;
+	font-size: 15pt;
+	font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width:575px) {
+	.kontakt button[type=submit] {
+		width: 100%;
+	}
+}
+.kontakt ::placeholder {
+	font-size: 15pt;
+	font-family: 'Roboto Slab', serif;
+}
+/* ------ Kontakt / kraj ------ */
+
+/* ------ Footer / početak ------ */
+.footer {
+	height: 250px;
+	background: #1D0F0F;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 60px;
+}
+
+.footer .footer-content {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.footer ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.footer ul li {
+	display: inline;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.footer li a {
+	color: #fff;
+	font-size: 18pt;
+	text-decoration: none;
+	font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width:767px) {
+	.footer ul li {
+		display: block;
+		text-align: center;
+	}
+}
+.footer p {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	margin:0;
+	margin-top: 30px;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+}
+
+/* ------ Footer / kraj ------ */
+
+
+
+/* ------ O meni / početak ------ */
+.o-meni h1,
+.vjestine h1 {
+	color: #1D0F0F;
+	font-size: 40pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+}
+.o-meni h2{
+	color: #1D0F0F;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 24pt;
+	margin-bottom: 20px;
+	font-family: 'Roboto Slab', serif;
+}
+.o-meni h3{
+	color: #1D0F0F;
+	font-size: 18pt;
+	padding-top: 10px;
+	font-family: 'Roboto Slab', serif;
+}
+.o-meni h4{
+	color: #1D0F0F;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 20pt;
+	margin-bottom: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.o-meni h5{
+	color: #1D0F0F;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20pt;
+	margin-bottom: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.o-meni p {
+	color: #1D0F0F;
+	font-family: 'Roboto Slab', serif;
+}
+.vjestina {
+	height: 250px;
+}
+.vjestina.svijetlo-siva {
+	background-color: #fff;
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
+}
+.vjestina.tamno-siva {
+	background-color: #fff;
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
+}
+@media screen and (max-width:767px) {
+	.vjestina:nth-child(odd) {
+		background-color: #fff;
+	}
+	.vjestina:nth-child(even) {
+		background-color: #fff;
+	}
+	.o-meni p:nth-child(1) {
+		margin-top: 40px;
+	}
+}
+.vjestina p {
+	color: #1D0F0F;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 20pt;
+}
+.no-spacing {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* ------ O meni / kraj ------ */
+
+/* ------ Članci / početak ------ */
+.clanci h1 {
+	color: #1D0F0F;
+	font-size: 40pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+}
+.clanci .mt-60 {
+	margin-top: 60px;
+}
+.clanak h2 {
+	color: #1D0F0F;
+	font-size: 24pt;
+	margin-bottom: 20px;
+	font-family: 'Roboto Slab', serif;
+}
+.clanci h5{
+	color: #1D0F0F;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20pt;
+	margin-bottom: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.clanci p {
+	color: #1D0F0F;
+	font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width:767px) {
+	.clanak h2 {
+		margin-top: 20px;		
+	}
+}
+@media screen and (max-width:575px) {
+	.clanak h2 {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.clanak p {
+		color: #1D0F0F;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+/* ------ Članci / kraj ------ */
+
+
+/* ------ Društvene mreže / početak ------ */
+.social-profiles h1 {
+	font-size: 40pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Dancing Script', cursive;
+}
+.social-profile {
+	height: 250px;
+}
+.social-profile.svijetlo-siva {
+	background-color: #fff;
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
+}
+.social-profile.tamno-siva {
+	background-color: #fff;
+	border: 1;
+	border-color: #1D0F0F;
+	border-style: solid;
+	border-width: 3px;
+}
+@media screen and (max-width:767px) {
+	.social-profile:nth-child(odd) {
+		background-color: #fff;
+	}
+	.social-profile:nth-child(even) {
+		background-color: #fff;
+	}
+}
+.social-profile p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 32pt;
+}
+.social-profile p a {
+	color: #1D0F0F;
+	text-decoration: none;
+}
+/* ------ Društvene mreže / kraj ------ */
